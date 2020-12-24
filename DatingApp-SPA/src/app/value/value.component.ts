@@ -15,6 +15,7 @@ export class ValueComponent implements OnInit {
     this.getValues();
   }
 
+  // tslint:disable-next-line:typedef
   getValues() {
     this.http.get('https://localhost:44327/Values').subscribe(response => {
       this.values = response;
