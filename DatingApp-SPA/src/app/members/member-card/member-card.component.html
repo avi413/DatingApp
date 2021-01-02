@@ -1,6 +1,6 @@
 <div class="card mb-4">
   <div class="card-img-wrapper">
-    <img class="card-img-top" src="{{user.photoUrl}}" alt="{{user.knownAs}}">
+    <img class="card-img-top" src="{{user.photoUrl || '../../../assets/user.png'}}" alt="{{user.knownAs}}">
     <div class="member-icons animate text-center center">
       <button class="btn btn-primary m-1" [routerLink]="['/members/',user.id]" routerLinkActive="router-link-active" ><i class="fa fa-user"></i></button>
       <button class="btn btn-primary m-1"><i class="fa fa-heart"></i></button>

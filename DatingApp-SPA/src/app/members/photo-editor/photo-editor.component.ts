@@ -55,6 +55,11 @@ currenMain: Photo;
           isMain: res.isMain
         };
         this.photos.push(photo);
+        if(photo.isMain) {
+          this.autheService.changeMenmberPhoto(photo.url);
+          this.autheService.currentUser.photoUrl = photo.url;
+          localStorage.setItem('user', JSON.stringify(this.autheService.currentUser));
+        }
       }
     };
   }

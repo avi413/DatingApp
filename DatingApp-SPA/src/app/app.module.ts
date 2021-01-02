@@ -12,8 +12,9 @@ import { AppComponent } from './app.component';
 import { ValueComponent } from './value/value.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NavComponent } from './nav/nav.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 
 import { AuthService } from './_services/auth.service';
@@ -68,13 +69,15 @@ export function tokenGetter() {
    ],
   imports: [
     BsDropdownModule.forRoot(),
+    BsDatepickerModule.forRoot(),
     TabsModule.forRoot(),
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     NgxGalleryModule ,
     FormsModule,
+    ReactiveFormsModule,
     FileUploadModule,
-    BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes),
     NgxGalleryModule,
     JwtModule.forRoot({
