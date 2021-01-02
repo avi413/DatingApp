@@ -32,6 +32,7 @@ namespace DatingApp.API
         {
             
             services.AddCors();//ad add permision for http get
+            services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
             services.AddDbContext<DataContext>(option => option.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllers();
             services.AddAutoMapper(typeof(DatingRepository).Assembly);

@@ -1,0 +1,23 @@
+{
+  "name": "DatingApp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avi413/DatingApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avi413/DatingApp/issues"
+  },
+  "homepage": "https://github.com/avi413/DatingApp#readme",
+  "description": "",
+  "dependencies": {
+    "ng2-file-upload": "^1.4.0"
+  }
+}
