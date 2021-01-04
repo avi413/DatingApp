@@ -8,6 +8,7 @@ import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { FileUploadModule } from 'ng2-file-upload';
 import { TimeAgoExtPipe } from './_pipes/time-ago-ext.pipe';
 
+
 import { AppComponent } from './app.component';
 import { ValueComponent } from './value/value.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -15,8 +16,9 @@ import { NavComponent } from './nav/nav.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { TabsModule } from 'ngx-bootstrap/tabs';
-
+import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { AuthService } from './_services/auth.service';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
@@ -62,6 +64,7 @@ export function tokenGetter() {
       MemberEditComponent,
       PhotoEditorComponent,
       TimeAgoExtPipe,
+      
    ],
   imports: [
     BsDropdownModule.forRoot(),
@@ -71,6 +74,8 @@ export function tokenGetter() {
     BrowserAnimationsModule,
     HttpClientModule,
     NgxGalleryModule ,
+    PaginationModule,
+    ButtonsModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
     FileUploadModule,
